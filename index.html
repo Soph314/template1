@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Trial</title>
+
+  
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<link href= "css/bootstrap.min.css" rel="stylesheet">
+	<link href= "css/styles.css" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  body{ 
+			padding-top: 40px ; padding-bottom:40px;position: relative; 
+		} 
+		.glyphicon{
+			font-size: 3em;
+			}
+		.navbar-btn { margin-right: 20px;}
+		.anchor { padding-top: 30px; }
+		nav li a{ margin-right: 10px;}
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                          
+      </button>
+      <a class="navbar-brand" href="#">My website</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        
+        <ul class= "nav navbar-nav navbar-right">
+						<a href="#home" class= "btn btn-info navbar-btn glyphicon glyphicon-home"></a>
+						<li class= "active"> <a href = "#home"> Home </a></li>
+        				<li> <a href = "#feedback"> Feedback </a></li>
+						<li> <a href = "#gallery"> Gallery</a></li>
+						<li> <a href = "#features"> Features</a></li>
+						<li> <a href = "#faqs"> Faqs </a></li>
+						<li> <a href = "#contacts"> Contact Us </a></li>
+          				
+          				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Section 4<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#section4dot1">Section 4.1</a></li>
+                            <li><a href="#section4dot2">Section 4.2</a></li>
+                            <li><a href="#section4dot3">Section 4.3</a></li>
+                        </ul>
+                    </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+		<div class = "container text-center anchor" id ="home">
+			<div class = "jumbotron"  >
+				<h1 class = "text-center"> My site name! </h1>
+				<p>This is cool sentence about my site!</p>
+				<div class = "btn-group">	<!--remove if want-->
+					<a class = "btn btn-default">A link Button!</a>
+					<a class = "btn btn-info">Another!</a> 
+				</div>
+			</div>
+		</div>
+<!--Jumbotron end-->		
+<!-- columns -->		
+		<div class= "container anchor"id="feedback">
+			<section>	
+				<div class = "page-header" >
+					<h2>Feedback.<small>  Check it out.</small></h2>
+				</div>
+				<div class="row">
+					<div class="col-sm-4"> <!--change so repeats add to 12 size fits ie sm to lg-->
+						<blockquote>
+							<p>A review of the website or some sort.</p>
+							<footer>John Doe</footer>
+						</blockquote>
+					</div>
+					<div class="col-sm-4"> 
+						<blockquote>
+							<p>A review of the website or some sort.</p>
+							<footer>John Doe</footer>
+						</blockquote>
+					</div>
+					<div class="col-sm-4"> 
+						<blockquote>
+							<p>A review of the website or some sort.</p>
+							<footer>John Doe</footer>
+						</blockquote>
+					</div>
+				</div>
+			</section>
+		</div>
+<!-- end of columns-->	
+
+<!-- call to action -->
+	<section> 
+		<div class="well">
+			<div class= "container text-center">
+				<h3>Subscribe</h3>
+				<p>Enter your name and email for updates</p>
+				
+				<form action="" class="form-inline">
+					<div class="form-group">
+						<label for="subscription">Subscribe</label>
+						<input type="text" class="form-control" id="subscription" placeholder="Enter your name here"> 
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="text" class="form-control" id="email" placeholder="Enter your email here"> 
+					</div>
+					<button type= "submit" class="btn btn-warning"> Subscribe</button>
+					<hr>
+				</form>
+			</div>
+		</div>
+	
+	</section>
+<!-- end of call to action-->
+
+<!-- Gallery-->
+	<div class= "container anchor" id = "gallery">
+		<section>	
+			<div class = "page-header">
+					<h2>Gallery.<small>  Check it out.</small></h2>
+			</div>	
+			<div class= "carousel slide" id="screenshot-carousel" date-ride="carousel"> <!--If you change id - change # below!! -->
+				<ol class= "carousel-indicators">
+					<li data-target="#screenshot-carousel" data-slide-to="0" class = "active"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="1"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="2"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="3"></li>
+				</ol>
+				<div class = "carousel-inner">
+					<div class = "item active">
+						<img src="images/drip.jpg" alt="Text of the image">
+						<div class= "carousel-caption">
+							<h3>Heading</h3>
+							<p>This is a caption</p> <!--if you want captions-->
+						</div>
+					</div>
+					<div class = "item">
+						<img src="images/caudata.jpg" alt="Text of the image">
+					</div>
+					<div class = "item">
+						<img src="images/snowdrop.jpg" alt="Text of the image">
+					</div>
+					<!--make sure images are all the same dimensions-->
+					
+				</div>
+				<a href="#screenshot-carousel" class="left carousel-control" data-slide= "prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a href="#screenshot-carousel" class="right carousel-control" data-slide= "next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div><!-- end of carousel-->
+			
+		</section>
+	</div>
+	
+<!--End of gallery-->		
+
+<!--Features -->
+	<div class = "container anchor" id = "features">
+		<section>
+			<div class = "page-header" >
+					<h2>Features<small> What does it do!!</small></h2>
+			</div>	
+			<div class= "row">
+				<div class="col-md-8">
+				<h3>Heading</h3>
+				<p>A paragraph about something!!</p>
+				</div>
+				<div class = "col-md-4">
+					<img src="images/otago.jpg" class="img-responsive" alt="image">
+				</div>
+			</div>
+			<div class= "row">
+				<div class="col-md-8">
+				<h3>Heading</h3>
+				<p>A paragraph about something!!</p>
+				</div>
+				<div class = "col-md-4">
+					<img src="images/otago.jpg" class="img-responsive" alt="image">
+				</div>
+			</div>
+			<div class= "row">
+				<div class="col-md-8">
+				<h3>Heading</h3>
+				<p>A paragraph about something!!</p>
+				</div>
+				<div class = "col-md-4">
+					<img src="images/otago.jpg" class="img-responsive" alt="image">
+				</div>
+			</div>
+			<hr>
+			<!-- Column features-->
+			<div class = "row">
+				<div class="col-md-4">
+					<div class = "panel panel-default text-center">
+						<div class= "panel-body">
+							<span class="glyphicon glyphicon-music"> </span>
+							<h4> Heading</h4>
+							<p>A paragraph</P>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class = "panel panel-default text-center">
+						<div class= "panel-body">
+							<span class="glyphicon glyphicon-tree-conifer"> </span>
+							<h4> Heading</h4>
+							<p>A paragraph</P>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class = "panel panel-default text-center">
+						<div class= "panel-body">
+							<span class="glyphicon glyphicon-camera"> </span>
+							<h4> Heading</h4>
+							<p>A paragraph</P>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end of extra columns-->
+		</section>	
+	</div>
+<!-- end of features-->		
+
+<!--Faq-->
+	<div class= "container anchor" id="faqs">
+		<section>
+			<div class = "page-header" ">
+					<h2>Faqs<small> Information on us.</small></h2>
+			</div>
+			<!-- Panel one-->
+			<div class = "panel-group" id="accordion">
+				<div class= "panel panel-default">
+					<div class = "panel-heading">
+						<div class = "panel-title">
+							<a href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+							Question one?
+							</a>
+					 	</div>
+					
+					<div id="collapse1" class= "panel-collapse collapse in">
+						<div class="panel-body">
+						Paragraph
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+			<!-- Panel two -->
+			<div class = "panel-group" id="accordion">
+				<div class= "panel panel-default">
+					<div class = "panel-heading">
+						<div class = "panel-title">
+							<a href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+							Question Two?
+							</a>
+					 	</div>
+					
+					<div id="collapse2" class= "panel-collapse collapse">
+						<div class="panel-body">
+						Paragraph
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!-- Panel three -->
+			<div class = "panel-group" id="accordion">
+				<div class= "panel panel-default">
+					<div class = "panel-heading">
+						<div class = "panel-title">
+							<a href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+							Question Three?
+							</a>
+					 	</div>
+					
+					<div id="collapse3" class= "panel-collapse collapse">
+						<div class="panel-body">
+						Paragraph
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	</section>
+	</div>
+
+<!--end of Faq-->
+
+<!--Contacts-->
+	<div class= "container anchor" id="contacts">
+		<section>
+			<div class = "page-header" >
+					<h2>contacts<small> Contact us for more.</small></h2>
+			</div>
+			
+			<div class = "row">
+				<div class="col-md-4">
+					<p>Send us a message, or contact us from the address below. </p>
+					
+					<address>
+						<strong>House</strong>
+						Street
+						Region
+						County 
+						Phone
+					</address>	
+					
+				</div>
+				<div class="col-md-8">
+					<form action="" class="form-horizontal">
+						
+						<div class="form-group">
+							<label for = "user name" class="col-md-2 control-label">Name</label>
+							<div class="col-md-10"> <!--nested column adds to 12-->
+								<input type= "text" class="form-control" id="user-name" placeholder="Enter your name"> 
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for = "user email" class="col-md-2 control-label">Email</label>
+							<div class="col-md-10"> <!--nested column adds to 12-->
+								<input type= "text" class="form-control" id="user-email" placeholder="Enter your email"> 
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for = "user phone" class="col-md-2 control-label">Phone number</label>
+							<div class="col-md-10"> <!--nested column adds to 12-->
+								<input type= "text" class="form-control" id="user-phone" placeholder="Enter your phone number"> 
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for = "user message" class="col-md-2 control-label">Your message</label>
+							<div class="col-md-10"> <!--nested column adds to 12-->
+								<textarea name= "user-message"  class="form-control" id="user-message" cols="20" rows="6" placeholder="Enter your message here"> </textarea>
+							</div>
+						</div>
+					
+					<div class="form-group">
+						<div class= "col-md-10 col-md-offset-2">
+							<button type="submit" class="btn btn-primary"> Submit</button>
+						</div>
+					</div>
+					
+					
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+<!-- end contacts-->	
+<hr>
+<!-- Footer-->	
+	<footer>
+		<div class= "container text-center">
+				<h3>Subscribe</h3>
+				<p>Enter your name and email for updates</p>
+				
+				<form action="" class="form-inline">
+					<div class="form-group">
+						<label for="subscription">Subscribe</label>
+						<input type="text" class="form-control" id="subscription" placeholder="Enter your name here"> 
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="text" class="form-control" id="email" placeholder="Enter your email here"> 
+					</div>
+					<button type= "submit" class="btn btn-warning"> Subscribe</button>
+					
+				</form>
+			<hr>
+			<ul class= "list-inline">
+				<li><a href"#">Facebook</a></li>
+				<li><a href"#">Instagram</a></li>
+				<li><a href"#">YouTube</a></li>
+			</ul>
+			
+			<p>&copy; Copyright @ 2016 </p>
+			</div>
+			
+
+	</footer>
+<!-- end footer-->
+
+<!-- bottom navbar-->		
+		<div class= "navbar navbar-default navbar-fixed-bottom">
+			<div class = "container">
+				<p class= "navbar-text pull-left"> Site built by Sophia </p>
+				<a href = "https://youtube.com" class= "navbar-btn btn-danger btn pull-right"> Subscribe on Youtube</a>
+			</div>		
+		</div>
+<!-- end of bottom of navbar-->
+
+
+
+		
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script scr="js/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
